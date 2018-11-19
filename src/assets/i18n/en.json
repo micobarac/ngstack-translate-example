@@ -1,0 +1,21 @@
+{
+  "App": {
+    "Title": "Multilanguage application"
+  },
+  "Message": "Hello from @ngstack/translate {emoticon}!",
+  "Section": {
+    "Title": "Section",
+    "Content": "<h2 class=\"subtitle\">A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.</h2>"
+  },
+  "Home": {
+    "Title": "Home"
+  },
+  "Customers": {
+    "Title": "Customers",
+    "Content": "Here is a list of customers"
+  },
+  "Orders": {
+    "Title": "Orders",
+    "Content": "Here is a list of orders"
+  }
+}

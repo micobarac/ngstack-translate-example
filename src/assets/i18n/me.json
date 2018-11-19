@@ -1,0 +1,21 @@
+{
+  "App": {
+    "Title": "Višejezična aplikacija"
+  },
+  "Message": "Zdravo živo od @ngstack/translate {emoticon}!",
+  "Section": {
+    "Title": "Sekcija",
+    "Content": "<h2 class=\"subtitle\">Jedostavan odjeljak koji dijeli stranicu na <strong>sekcije</strong>, poput ove koju upravo čitaš.</h2>"
+  },
+  "Home": {
+    "Title": "Početna"
+  },
+  "Customers": {
+    "Title": "Potrošači",
+    "Content": "Evo je lista potrošača"
+  },
+  "Orders": {
+    "Title": "Narudžbine",
+    "Content": "Evo je lista narudžbina"
+  }
+}
