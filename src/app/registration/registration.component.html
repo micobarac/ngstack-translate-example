@@ -1,0 +1,33 @@
+<div class="container mt-3">
+  <div class="col-md-6 offset-md-3">
+    <form [formGroup]="form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Full Name" formControlName="name" appErrorCheck />
+        <app-error-message name="name" error="required">Name is required.</app-error-message>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email"
+          appErrorCheck />
+        <app-error-message name="email" error="required">Email Address is required.</app-error-message>
+        <app-error-message name="email" error="email">Please enter a valid email.</app-error-message>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password"
+          appErrorCheck />
+        <app-error-message name="password" error="required">Password is required.</app-error-message>
+        <app-error-message name="password" error="minlength">Password must be at least 6 characters.</app-error-message>
+      </div>
+      <div class="form-group">
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" class="form-control" id="passwordConfirm" placeholder="Password" formControlName="passwordConfirm"
+          appErrorCheck />
+        <app-error-message name="passwordConfirm" error="required">Password confirm is required.</app-error-message>
+        <app-error-message name="passwordConfirm" error="validatePasswordConfirm">Must be equal to password.</app-error-message>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

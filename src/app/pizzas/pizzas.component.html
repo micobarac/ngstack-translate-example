@@ -1,0 +1,41 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <button type="button" class="button is-medium is-success" (click)="newPizza()">{{ 'Pizzas.Add' | translate }}</button>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <h1 class="title">{{ 'Pizzas.Title' | translate }}</h1>
+          <div *ngFor="let pizza of pizzas$ | async" (click)="setActivePizza(pizza.id)">
+            <div class="card pizza" [ngClass]="{'active': pizza.id === activePizzaId}">
+              <div class="card-body">
+                <img src="https://img.clipartxtras.com/c286fc515e531e5fdb4aa839bc81fea9_pizza-clipart-margherita-pizza-pencil-and-in-color-pizza-clipart-pizza-margherita-clipart_1300-975.jpeg">
+                <div class="card-text" *ngIf="pizza.id === activePizzaId">
+                  <span class="tag is-danger is-medium" *ngFor="let topping of activePizzaToppings$ | async; let last = last;">
+                    {{topping}}
+                    <button class="delete is-small" (click)="toggleTopping(topping)"></button>
+                  </span>
+                  <span class="tag is-warning is-medium" *ngIf="!(activePizzaToppings$ | async).length">{{
+                    'Pizzas.None' | translate }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <h1 class="title">{{ 'Pizzas.Toppings.Title' | translate }}</h1>
+          <div class="field is-grouped toppings-menu">
+            <p class="control" *ngFor="let topping of toppings">
+              <button type="button" class="button" (click)="toggleTopping(topping)">{{topping}}</button>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

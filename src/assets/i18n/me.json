@@ -17,5 +17,21 @@
   "Orders": {
     "Title": "Narudžbine",
     "Content": "Evo je lista narudžbina"
+  },
+  "Pizzas": {
+    "Title": "Pice",
+    "Add": "Dodaj novu picu",
+    "Toppings": {
+      "Title": "Nadjevi",
+      "Items": {
+        "Basil": "bosiljak",
+        "ChillyPeppers": "ljuta papričica",
+        "Mozzarella": "mocarela",
+        "Mushrooms": "pečurke",
+        "Olives": "masline",
+        "Tomatoes": "paradajz"
+      }
+    },
+    "None": "Pica je prazna :("
   }
 }

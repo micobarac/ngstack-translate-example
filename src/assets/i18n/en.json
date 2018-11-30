@@ -17,5 +17,21 @@
   "Orders": {
     "Title": "Orders",
     "Content": "Here is a list of orders"
+  },
+  "Pizzas": {
+    "Title": "Pizzas",
+    "Add": "Add A New Pizza",
+    "Toppings": {
+      "Title": "Toppings",
+      "Items": {
+        "Basil": "basil",
+        "ChillyPeppers": "chili peppers",
+        "Mozzarella": "mozzarella",
+        "Mushrooms": "mushrooms",
+        "Olives": "olives",
+        "Tomatoes": "tomatoes"
+      }
+    },
+    "None": "Pizza is empty :("
   }
 }
