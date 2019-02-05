@@ -13,7 +13,7 @@ export class PizzasComponent implements OnInit {
   activePizzaToppings$: Observable<Topping[]>;
   toppings: Topping[];
 
-  get activePizzaId(): ID {
+  get activePizzaId(): ID | ID[] {
     return this.pizzasQuery.getActiveId();
   }
 

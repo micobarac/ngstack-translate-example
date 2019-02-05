@@ -11,11 +11,11 @@ export class PizzasService {
     this.pizzasStore.addNewPizza();
   }
 
-  setActivePizza(id: ID) {
+  setActivePizza(id: ID | ID[]) {
     this.pizzasStore.setActive(id);
   }
 
-  toggleTopping(activePizzaID: ID, topping: Topping) {
+  toggleTopping(activePizzaID: ID | ID[], topping: Topping) {
     this.pizzasStore.toggleTopping(activePizzaID, topping);
   }
 }

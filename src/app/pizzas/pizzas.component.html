@@ -12,7 +12,7 @@
           <div *ngFor="let pizza of pizzas$ | async" (click)="setActivePizza(pizza.id)">
             <div class="card pizza" [ngClass]="{'active': pizza.id === activePizzaId}">
               <div class="card-body">
-                <img src="https://img.clipartxtras.com/c286fc515e531e5fdb4aa839bc81fea9_pizza-clipart-margherita-pizza-pencil-and-in-color-pizza-clipart-pizza-margherita-clipart_1300-975.jpeg">
+                <img src="/assets/images/pizza.jpg">
                 <div class="card-text" *ngIf="pizza.id === activePizzaId">
                   <span class="tag is-danger is-medium" *ngFor="let topping of activePizzaToppings$ | async; let last = last;">
                     {{topping}}
